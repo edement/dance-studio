@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\authservices\\authservices\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|solutionrelative:authservices\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\authservices\\authservices\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|solutionrelative:authservices\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\authservices\\authservices\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|solutionrelative:authservices\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\authservices\\authservices\\services\\rediscacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|solutionrelative:authservices\\services\\rediscacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\authservices\\authservices\\interfaces\\irediscacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|solutionrelative:authservices\\interfaces\\irediscacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\authservices\\authservices\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|solutionrelative:authservices\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\authservices\\authservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|solutionrelative:authservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\authservices\\authservices\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D0B69F-454D-4561-9902-E1EE7C14517F}|AuthServices\\AuthServices.csproj|solutionrelative:authservices\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Program.cs",
+              "RelativeDocumentMoniker": "AuthServices\\Program.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Program.cs",
+              "RelativeToolTip": "AuthServices\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T18:48:47.398Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Data\\UserRepository.cs",
+              "RelativeDocumentMoniker": "AuthServices\\Data\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Data\\UserRepository.cs",
+              "RelativeToolTip": "AuthServices\\Data\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T13:01:43.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "AuthServices\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Services\\AuthService.cs",
+              "RelativeToolTip": "AuthServices\\Services\\AuthService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAArwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:14:14.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "AuthServices\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Services\\TokenService.cs",
+              "RelativeToolTip": "AuthServices\\Services\\TokenService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:14:11.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AuthServices\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "AuthServices\\Controllers\\AuthController.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T22:21:46.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "AuthServices\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Services\\JwtService.cs",
+              "RelativeToolTip": "AuthServices\\Services\\JwtService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T11:17:56.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRedisCacheService.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Interfaces\\IRedisCacheService.cs",
+              "RelativeDocumentMoniker": "AuthServices\\Interfaces\\IRedisCacheService.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Interfaces\\IRedisCacheService.cs",
+              "RelativeToolTip": "AuthServices\\Interfaces\\IRedisCacheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T17:35:19.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RedisCacheService.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Services\\RedisCacheService.cs",
+              "RelativeDocumentMoniker": "AuthServices\\Services\\RedisCacheService.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Services\\RedisCacheService.cs",
+              "RelativeToolTip": "AuthServices\\Services\\RedisCacheService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T18:41:45.589Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

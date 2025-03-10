@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\backendapi\\backendapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|solutionrelative:backendapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\backendapi\\backendapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|solutionrelative:backendapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\backendapi\\backendapi\\data\\classrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|solutionrelative:backendapi\\data\\classrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\backendapi\\backendapi\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|solutionrelative:backendapi\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\backendapi\\backendapi\\data\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|solutionrelative:backendapi\\data\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\backendapi\\backendapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|solutionrelative:backendapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\backendapi\\backendapi\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|solutionrelative:backendapi\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|c:\\users\\dement\\desktop\\egor\\proga\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\backendapi\\backendapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A28D2174-7B0B-4968-88A7-D2401A75D7A0}|BackendAPI\\BackendAPI.csproj|solutionrelative:backendapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BackendAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Program.cs",
+              "RelativeToolTip": "BackendAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T10:47:20.433Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "BackendAPI\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "BackendAPI\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T10:13:27.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BackendAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "BackendAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T10:07:02.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BackendAPI\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Services\\UserService.cs",
+              "RelativeToolTip": "BackendAPI\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T10:07:24.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "BackendAPI\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "BackendAPI\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T10:02:31.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Data\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "BackendAPI\\Data\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Data\\BaseRepository.cs",
+              "RelativeToolTip": "BackendAPI\\Data\\BaseRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T10:02:27.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Data\\UserRepository.cs",
+              "RelativeDocumentMoniker": "BackendAPI\\Data\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Data\\UserRepository.cs",
+              "RelativeToolTip": "BackendAPI\\Data\\UserRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T10:02:28.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClassRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Data\\ClassRepository.cs",
+              "RelativeDocumentMoniker": "BackendAPI\\Data\\ClassRepository.cs",
+              "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\BackendAPI\\BackendAPI\\Data\\ClassRepository.cs",
+              "RelativeToolTip": "BackendAPI\\Data\\ClassRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T10:02:30.328Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
