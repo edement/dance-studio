@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "BackendAPI.DTOs.ClassDTO",
+        "Type": "System.Text.Json.JsonElement",
         "IsRequired": true
       }
     ],
@@ -18,7 +18,7 @@
   {
     "ContainingType": "BackendAPI.Controllers.ClassController",
     "Method": "DeleteAsync",
-    "RelativePath": "class/${classId}",
+    "RelativePath": "class/{classId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -34,7 +34,7 @@
   {
     "ContainingType": "BackendAPI.Controllers.ClassController",
     "Method": "UpdateAsync",
-    "RelativePath": "class/${classId}",
+    "RelativePath": "class/{classId}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -116,6 +116,26 @@
   },
   {
     "ContainingType": "BackendAPI.Controllers.UserController",
+    "Method": "GetMyEnrollmentsAsync",
+    "RelativePath": "enrollments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BackendAPI.Models.Class, BackendAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BackendAPI.Controllers.UserController",
     "Method": "CreateAsync",
     "RelativePath": "register",
     "HttpMethod": "POST",
@@ -145,51 +165,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BackendAPI.Controllers.UserController",
-    "Method": "GetByLoginAsync",
-    "RelativePath": "user/{login}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "login",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BackendAPI.Models.User",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BackendAPI.Controllers.UserController",
-    "Method": "GetAllAsync",
-    "RelativePath": "users",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[BackendAPI.Models.User, BackendAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   }
 ]

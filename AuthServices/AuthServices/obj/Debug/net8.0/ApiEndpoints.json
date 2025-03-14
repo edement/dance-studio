@@ -40,8 +40,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "token",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "System.Text.Json.JsonElement",
         "IsRequired": true
       }
     ],

@@ -12,5 +12,13 @@ namespace BackendAPI.Data
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Login == login) ?? throw new Exception(); //error
             return user;
         }
+        public async Task<List<Class>> GetMyEnrollmentsAsync(Guid userId)
+        {
+            var enrollments = await _context.Enrollments
+                .Where(e => e.UserId == userId)
+                .Select(e => e.Class)
+                .ToListAsync();
+            return enrollments;
+        }
     }
 }

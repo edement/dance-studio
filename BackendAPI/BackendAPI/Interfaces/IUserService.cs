@@ -12,5 +12,6 @@ namespace BackendAPI.Interfaces
         Task<User?> GetByLoginAsync(string login);
         Task DeleteAsync(Guid id);
         Task UpdateAsync(string login, [FromBody] JsonElement request);
+        Task<List<Class>> GetMyEnrollmentsAsync(Guid userId);
     }
 }

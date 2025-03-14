@@ -1,6 +1,7 @@
 ﻿using AuthServices.Models.DTOs;
 using AuthServices.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace AuthServices.Controllers
 {
@@ -19,12 +20,13 @@ namespace AuthServices.Controllers
             return Ok(token);
         }
         [HttpPost("validate")]
-        public IActionResult ValidateAccess([FromBody] string token)
+        public IActionResult ValidateAccess([FromBody] JsonElement request)
         {
-            if (string.IsNullOrEmpty(token))
+            var accessToken = request.GetProperty("accessToken").ToString();
+            if (string.IsNullOrEmpty(accessToken))
                 return BadRequest(new { isValid = false });
 
-            bool isValid = _authService.ValidateAccess(token);
+            bool isValid = _authService.ValidateAccess(accessToken);
             return Ok(new { isValid });
         }
         [HttpPost("refresh")]

@@ -7,7 +7,7 @@ namespace BackendAPI.Interfaces
 {
     public interface IClassService
     {
-        Task CreateAsync(ClassDTO request);
+        Task CreateAsync(DateTime date, Guid coachId);
         Task<List<Class>> GetAllAsync();
         Task<Class?> GetByIdAsync(Guid id);
         Task DeleteAsync(Guid id);

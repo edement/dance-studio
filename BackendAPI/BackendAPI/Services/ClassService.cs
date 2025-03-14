@@ -3,20 +3,19 @@ using BackendAPI.DTOs;
 using BackendAPI.Models;
 using BackendAPI.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
 namespace BackendAPI.Services
 {
     public class ClassService(IClassRepository _classRepository) : IClassService
     {
-        public async Task CreateAsync(ClassDTO request)
+        public async Task CreateAsync(DateTime date, Guid coachId)
         {
             var classEntity = new Class()
             {
                 Id = new Guid(),
-                Date = request.Date,
-                CoachId = request.CoachId
+                Date = date.ToUniversalTime(),
+                CoachId = coachId
             };
 
             await _classRepository.CreateAsync(classEntity);

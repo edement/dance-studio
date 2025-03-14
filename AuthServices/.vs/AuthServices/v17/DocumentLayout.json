@@ -53,7 +53,7 @@
               "RelativeDocumentMoniker": "AuthServices\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Controllers\\AuthController.cs",
               "RelativeToolTip": "AuthServices\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAMwCYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T22:18:53.386Z",
               "IsPinned": true,
@@ -67,9 +67,10 @@
               "RelativeDocumentMoniker": "AuthServices\\Services\\TokenService.cs",
               "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Services\\TokenService.cs",
               "RelativeToolTip": "AuthServices\\Services\\TokenService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAewBIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAnwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:42:27.573Z"
+              "WhenOpened": "2025-03-13T12:42:27.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -91,9 +92,10 @@
               "RelativeDocumentMoniker": "AuthServices\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\dement\\Desktop\\EGOR\\PROGA\\\u0441\u0430\u0439\u0442 \u043F\u043E \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435\\AuthServices\\AuthServices\\Services\\AuthService.cs",
               "RelativeToolTip": "AuthServices\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:32:54.439Z"
+              "WhenOpened": "2025-03-13T12:32:54.439Z",
+              "EditorCaption": ""
             }
           ]
         }

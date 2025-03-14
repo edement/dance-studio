@@ -8,17 +8,11 @@ namespace BackendAPI.Controllers
     [ApiController]
     public class UserController(IUserService _userService) : ControllerBase
     {
-        [HttpGet("users")]
+        /*[HttpGet("users")]
         public async Task<List<User>> GetAllAsync()
         {
             return await _userService.GetAllAsync();
-        }
-        [HttpGet("user/{login}")]
-        public async Task<User?> GetByLoginAsync(string login)
-        {
-            var user = await _userService.GetByLoginAsync(login);
-            return user;
-        }
+        }*/
         [HttpPost("register")]
         public async Task<IActionResult> CreateAsync(RegisterDTO request)
         {
@@ -30,6 +24,13 @@ namespace BackendAPI.Controllers
         {
             await _userService.DeleteAsync(id);
             return Ok("Deleted");
+        }
+        [HttpGet("enrollments")]
+        public async Task<List<Class>> GetMyEnrollmentsAsync()
+        {
+            var userId = User.FindFirst("userId")?.Value;
+            var enrollments = await _userService.GetMyEnrollmentsAsync(Guid.Parse(userId));
+            return enrollments;
         }
     }
 }

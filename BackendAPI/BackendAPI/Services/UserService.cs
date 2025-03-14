@@ -6,7 +6,7 @@ using System.Text.Json;
 
 namespace BackendAPI.Services
 {
-    internal class UserService(IUserRepository userRepository) : IUserService
+    internal class UserService(IUserRepository _userRepository) : IUserService
     {
         public async Task CreateAsync(RegisterDTO request)
         {
@@ -17,22 +17,22 @@ namespace BackendAPI.Services
                 HashedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password)
             };
 
-            await userRepository.CreateAsync(user);
+            await _userRepository.CreateAsync(user);
         }
 
         public async Task DeleteAsync(Guid id)
         {
-            await userRepository.DeleteAsync(id);
+            await _userRepository.DeleteAsync(id);
         }
 
         public async Task<List<User>> GetAllAsync()
         {
-            return await userRepository.GetAllAsync();
+            return await _userRepository.GetAllAsync();
         }
 
         public Task<User?> GetByLoginAsync(string login)
         {
-            var user = userRepository.GetByLoginAsync(login);
+            var user = _userRepository.GetByLoginAsync(login);
             if(user == null) { throw new Exception("User Not Found"); }
 
             return user;
@@ -42,7 +42,7 @@ namespace BackendAPI.Services
         {
             var userNew = JsonSerializer.Deserialize<User>(request.GetRawText());
             if(userNew == null) { throw new Exception("No New Info"); }
-            var userEntity = await userRepository.GetByLoginAsync(login);
+            var userEntity = await _userRepository.GetByLoginAsync(login);
 
             if (userNew.HashedPassword != "")
             {
@@ -53,7 +53,12 @@ namespace BackendAPI.Services
                 userEntity.Login = userNew.Login;
             }
 
-            await userRepository.UpdateAsync(userEntity);
+            await _userRepository.UpdateAsync(userEntity);
+        }
+        public async Task<List<Class>> GetMyEnrollmentsAsync(Guid userId)
+        {
+            var enrollments = await _userRepository.GetMyEnrollmentsAsync(userId);
+            return enrollments;
         }
     }
 }
