@@ -1,4 +1,7 @@
-﻿namespace BackendAPI.Interfaces
+﻿using BackendAPI.DTOs;
+using BackendAPI.Models;
+
+namespace BackendAPI.Interfaces
 {
     public interface IRepository<T> where T : class
     {

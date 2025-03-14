@@ -18,13 +18,13 @@
   {
     "ContainingType": "BackendAPI.Controllers.ClassController",
     "Method": "DeleteAsync",
-    "RelativePath": "class/${id}",
+    "RelativePath": "class/${classId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "classId",
         "Type": "System.Guid",
         "IsRequired": true
       }
@@ -34,19 +34,35 @@
   {
     "ContainingType": "BackendAPI.Controllers.ClassController",
     "Method": "UpdateAsync",
-    "RelativePath": "class/${id}",
+    "RelativePath": "class/${classId}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "classId",
         "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "request",
         "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BackendAPI.Controllers.ClassController",
+    "Method": "JoinClass",
+    "RelativePath": "class/join/{classId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "classId",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -75,13 +91,13 @@
   {
     "ContainingType": "BackendAPI.Controllers.ClassController",
     "Method": "GetByIdAsync",
-    "RelativePath": "classes/${id}",
+    "RelativePath": "classes/{classId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "classId",
         "Type": "System.Guid",
         "IsRequired": true
       }

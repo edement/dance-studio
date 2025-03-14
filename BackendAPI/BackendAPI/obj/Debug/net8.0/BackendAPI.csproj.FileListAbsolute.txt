@@ -137,3 +137,12 @@ C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendA
 C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\obj\Debug\net8.0\BackendAPI.genruntimeconfig.cache
 C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\obj\Debug\net8.0\ref\BackendAPI.dll
 C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\obj\Debug\net8.0\BackendAPI.sourcelink.json
+C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\BackendAPI\BackendAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

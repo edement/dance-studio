@@ -5,5 +5,7 @@
         public Guid Id { get; set; }
         public DateTime Date { get; set; }
         public Guid CoachId { get; set; }
+
+        public List<Enrollment> Enrollments { get; set; } = new();
     }
 }

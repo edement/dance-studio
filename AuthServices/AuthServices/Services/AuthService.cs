@@ -1,49 +1,76 @@
-﻿using AuthServices.DTOs;
-using AuthServices.Interfaces;
+﻿using AuthServices.Data.Interfaces;
 using AuthServices.Models;
+using AuthServices.Models.DTOs;
+using AuthServices.Services.Interfaces;
 using Microsoft.AspNetCore.Http.HttpResults;
+using System.IdentityModel.Tokens.Jwt;
+using System.Reflection.Metadata.Ecma335;
+using System.Security.AccessControl;
+using System.Text.Json;
 
 namespace AuthServices.Services
 {
-    public class AuthService(IUserRepository _userRepository, 
-        IRedisCacheService _cache, 
-        ITokenService _tokenService,
-        ITokenRepository _tokenRepository
-        ) : IAuthService
+    public class AuthService : IAuthService
     {
-        public async Task<User> GetUserByLogin(string login) // убрать из интерфейса + сделать private
+        private readonly ICacheService _cacheService;
+        private readonly ITokenService _tokenService;
+        private readonly HttpClient _httpClient;
+        public AuthService(ICacheService cacheService, ITokenService tokenService, HttpClient httpClient)
         {
-            var cachingKey = $"users:{login}";
-
-            var user = _cache.GetData<User>(cachingKey);
-            if (user != null) { return user; }
-
-            user = await _userRepository.GetByLoginAsync(login);
-            if(user == null) { throw new Exception("User Not Found"); }
-
-            _cache.SetData(cachingKey, user, 5 * 60);
-
-            return user;
+            _cacheService = cacheService;
+            _tokenService = tokenService;
+            _httpClient = httpClient;
         }
 
-        public async Task<TokensResponse> Login(UserDto request)
+        public async Task<TokensPair?> Login(AuthRequest request)
         {
-            // проверка пользователя
-            var user = await GetUserByLogin(request.Login);
-            if (user == null) { return default; }
+            TokensPair tokens;
+            var user = await GetUser(request.Login);
+            if(user != null) 
+            {
+                tokens = new TokensPair(_tokenService.GenerateAccessToken(user), _tokenService.GenerateRefreshToken(user));
+                return tokens;
+            }
 
-            if (BCrypt.Net.BCrypt.EnhancedVerify(request.Password, user.HashedPassword, BCrypt.Net.HashType.SHA256)) { throw new Exception("Wrong Login or Password"); }
+            return null;
+        }
 
-            // генерация новых токенов
-            var tokens = _tokenService.GenerateTokens(user);
+        public bool ValidateAccess(string token)
+        {
+            var result = _tokenService.ValidateAccess(token);
+            return result;
+        }
 
-            // проверка refresh токена
-            var cachingKey = $"refresh:{user.Login}";
-            var refreshToken = _tokenRepository.GetRefreshToken(cachingKey);
-            if(refreshToken != null) { _tokenRepository.DelRefreshToken(cachingKey); }
-            _tokenRepository.SaveRefreshToken(cachingKey, tokens.RefreshToken);
+        public TokensPair? RefreshTokens(TokensPair tokens)
+        {
+            var newTokens = _tokenService.RefreshTokens(tokens);
+            return newTokens;
+        }
 
-            return tokens;
+        private async Task<User?> GetUser(string login)
+        {
+            try
+            {
+                // cache
+                var searchKey = $"users_{login}";
+                var user = _cacheService.GetData<User?>(searchKey);
+                if (user != null) { return user; }
+
+                // db
+                string url = $"http://localhost:5271/user/{login}";
+                user = await _httpClient.GetFromJsonAsync<User>(url);
+
+                if (user == null) { return null; }
+
+                _cacheService.SetData(searchKey, user, 24 * 60);
+
+                return user;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error while user request: {e.Message}");
+                return null;
+            }
         }
     }
 }

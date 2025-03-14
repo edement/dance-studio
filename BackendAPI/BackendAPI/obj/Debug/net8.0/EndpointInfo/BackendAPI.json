@@ -43,14 +43,14 @@
         }
       }
     },
-    "/classes/${id}": {
+    "/classes/{classId}": {
       "get": {
         "tags": [
           "Class"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "classId",
             "in": "path",
             "required": true,
             "schema": {
@@ -114,14 +114,14 @@
         }
       }
     },
-    "/class/${id}": {
+    "/class/${classId}": {
       "delete": {
         "tags": [
           "Class"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "classId",
             "in": "path",
             "required": true,
             "schema": {
@@ -142,7 +142,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "classId",
             "in": "path",
             "required": true,
             "schema": {
@@ -164,6 +164,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/class/join/{classId}": {
+      "post": {
+        "tags": [
+          "Class"
+        ],
+        "parameters": [
+          {
+            "name": "classId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -319,6 +342,13 @@
           "coachId": {
             "type": "string",
             "format": "uuid"
+          },
+          "enrollments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Enrollment"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -333,6 +363,26 @@
           "coachId": {
             "type": "string",
             "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Enrollment": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "classId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "class": {
+            "$ref": "#/components/schemas/Class"
           }
         },
         "additionalProperties": false
@@ -368,6 +418,13 @@
           },
           "role": {
             "type": "string",
+            "nullable": true
+          },
+          "enrollments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Enrollment"
+            },
             "nullable": true
           }
         },

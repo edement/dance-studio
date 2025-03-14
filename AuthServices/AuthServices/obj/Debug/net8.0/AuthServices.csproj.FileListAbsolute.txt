@@ -146,3 +146,4 @@ C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\AuthServ
 C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\AuthServices\AuthServices\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\AuthServices\AuthServices\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\AuthServices\AuthServices\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\dement\Desktop\EGOR\PROGA\сайт по архитектуре\AuthServices\AuthServices\obj\Debug\net8.0\AuthServices.sourcelink.json

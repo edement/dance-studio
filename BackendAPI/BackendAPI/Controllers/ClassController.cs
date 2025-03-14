@@ -3,45 +3,61 @@ using BackendAPI.Models;
 using BackendAPI.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace BackendAPI.Controllers
 {
     [ApiController]
-    public class ClassController(IClassService classService) : ControllerBase
+    [Authorize]
+    public class ClassController(IClassService _classService) : ControllerBase
     {
-        [HttpGet]
-        [Route("classes")]
+        [AllowAnonymous]
+        [HttpGet("classes")]
         public async Task<List<Class>?> GetAllAsync()
         {
-            return await classService.GetAllAsync();
+            return await _classService.GetAllAsync();
         }
-        [HttpGet]
-        [Route("classes/${id}")]
-        public async Task<Class?> GetByIdAsync(Guid id)
+        [AllowAnonymous]
+        [HttpGet("classes/{classId}")]
+        public async Task<Class?> GetByIdAsync(Guid classId)
         {
-            return await classService.GetByIdAsync(id);
+            return await _classService.GetByIdAsync(classId);
         }
-        [HttpPost]
-        [Route("class")]
+        [HttpPost("class")]
         public async Task<IActionResult> CreateAsync(ClassDTO request)
         {
-            await classService.CreateAsync(request);
+            await _classService.CreateAsync(request);
             return Created();
         }
-        [HttpDelete]
-        [Route("class/${id}")]
-        public async Task<IActionResult> DeleteAsync(Guid id)
+        [HttpDelete("class/${classId}")]
+        public async Task<IActionResult> DeleteAsync(Guid classId)
         {
-            await classService.DeleteAsync(id);
+            await _classService.DeleteAsync(classId);
             return Ok(Content("Successful Delete"));
         }
-        [HttpPatch]
-        [Route("class/${id}")]
-        public async Task<IActionResult> UpdateAsync(Guid id, [FromBody] JsonElement request)
+        [HttpPatch("class/${classId}")]
+        public async Task<IActionResult> UpdateAsync(Guid classId, [FromBody] JsonElement request)
         {
             if (request.ToString() == String.Empty) { return new StatusCodeResult(400); }
-            await classService.UpdateAsync(id, request);
+            await _classService.UpdateAsync(classId, request);
             return Ok(Content("Successful Editing"));
+        }
+        [HttpPost("class/join/{classId}")]
+        public async Task<IActionResult> JoinClass(Guid classId)
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var enrollment = new EnrollmentDTO()
+            {
+                UserId = Guid.Parse(userId),
+                ClassId = classId
+            };
+
+            var result = await _classService.JoinClass(enrollment);
+
+            if(result) { return Ok("User successfully enrolled to the class."); }
+
+            return BadRequest("Enrollment failed. Either the user or the class doesn't exist, or the user is already enrolled.");
         }
     }
 }

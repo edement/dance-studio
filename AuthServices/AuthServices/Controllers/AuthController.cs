@@ -1,48 +1,41 @@
-﻿using AuthServices.DTOs;
-using AuthServices.Interfaces;
-using AuthServices.Services;
+﻿using AuthServices.Models.DTOs;
+using AuthServices.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuthServices.Controllers
 {
     [ApiController]
-    public class AuthController(IAuthService authService) : ControllerBase
+    [Route("api/auth")]
+    public class AuthController : ControllerBase
     {
-        [HttpGet("/user")]
-        public async Task<IActionResult> GetUser([FromBody] UserDto request)
+        private readonly IAuthService _authService;
+        public AuthController(IAuthService authService) { _authService = authService; }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(AuthRequest request)
         {
-            var user = await authService.GetUserByLogin(request.Login);
-            return Ok(user);
+            var token = await _authService.Login(request);
+            if(token == null) { return Unauthorized("Wrong Login or Password"); }
+            return Ok(token);
         }
-
-        [HttpPost("/login")]
-        public async Task<IActionResult> Login([FromBody] UserDto request)
+        [HttpPost("validate")]
+        public IActionResult ValidateAccess([FromBody] string token)
         {
-            var tokens = await authService.Login(request);
+            if (string.IsNullOrEmpty(token))
+                return BadRequest(new { isValid = false });
 
-            return Ok(tokens);
+            bool isValid = _authService.ValidateAccess(token);
+            return Ok(new { isValid });
         }
-
-        [HttpGet("/validate")]
-        public async Task<IActionResult> ValidateToken([FromHeader] string Authorization)
+        [HttpPost("refresh")]
+        public IActionResult RefreshTokens([FromBody] TokensPair tokens)
         {
-            if (string.IsNullOrEmpty(Authorization) || !Authorization.StartsWith("Bearer "))
-                return Unauthorized(new { message = "Missing or invalid token" });
-
-            var token = Authorization["Bearer ".Length..]; // Убираем "Bearer "
-
-            var principal = _jwtService.ValidateJwtToken(token);
-            if (principal == null)
-                return Unauthorized(new { message = "Invalid token" });
-
-            return Ok(new { isValid = true });
-        }
-
-
-        [HttpGet("/ping")]
-        public string Ping()
-        {
-            return "Pong";
+            var newTokens = _authService.RefreshTokens(tokens);
+            if(newTokens == null)
+            {
+                return Unauthorized("Please Login");
+            }
+            return Ok(newTokens);
         }
     }
 }

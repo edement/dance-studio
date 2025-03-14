@@ -12,7 +12,18 @@ namespace BackendAPI.Data
         {
             modelBuilder.Entity<User>().HasKey(u => u.Id);
             modelBuilder.Entity<Class>().HasKey(c => c.Id);
-            modelBuilder.Entity<Enrollment>().HasNoKey();
+            modelBuilder.Entity<Enrollment>().HasKey(e => new { e.UserId, e.ClassId });
+
+            modelBuilder.Entity<Enrollment>()
+                .HasOne(e => e.User)
+                .WithMany(u => u.Enrollments)
+                .HasForeignKey(e => e.UserId);
+
+            modelBuilder.Entity<Enrollment>()
+                .HasOne(e => e.Class)
+                .WithMany(c => c.Enrollments)
+                .HasForeignKey(e => e.ClassId);
+
             base.OnModelCreating(modelBuilder);
         }
     }

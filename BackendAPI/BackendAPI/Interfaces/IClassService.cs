@@ -12,5 +12,6 @@ namespace BackendAPI.Interfaces
         Task<Class?> GetByIdAsync(Guid id);
         Task DeleteAsync(Guid id);
         Task UpdateAsync(Guid id, [FromBody] JsonElement request);
+        Task<bool> JoinClass(EnrollmentDTO enrollment);
     }
 }

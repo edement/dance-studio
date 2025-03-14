@@ -22,7 +22,7 @@ namespace BackendAPI.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("BackendAPI.Entities.Class", b =>
+            modelBuilder.Entity("BackendAPI.Models.Class", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -39,18 +39,22 @@ namespace BackendAPI.Migrations
                     b.ToTable("Classes");
                 });
 
-            modelBuilder.Entity("BackendAPI.Entities.Enrollment", b =>
+            modelBuilder.Entity("BackendAPI.Models.Enrollment", b =>
                 {
-                    b.Property<Guid>("Class_Id")
+                    b.Property<Guid>("UserId")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("Customer_Id")
+                    b.Property<Guid>("ClassId")
                         .HasColumnType("uuid");
+
+                    b.HasKey("UserId", "ClassId");
+
+                    b.HasIndex("ClassId");
 
                     b.ToTable("Enrollments");
                 });
 
-            modelBuilder.Entity("BackendAPI.Entities.User", b =>
+            modelBuilder.Entity("BackendAPI.Models.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -71,6 +75,35 @@ namespace BackendAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("BackendAPI.Models.Enrollment", b =>
+                {
+                    b.HasOne("BackendAPI.Models.Class", "Class")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("ClassId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendAPI.Models.User", "User")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Class");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BackendAPI.Models.Class", b =>
+                {
+                    b.Navigation("Enrollments");
+                });
+
+            modelBuilder.Entity("BackendAPI.Models.User", b =>
+                {
+                    b.Navigation("Enrollments");
                 });
 #pragma warning restore 612, 618
         }

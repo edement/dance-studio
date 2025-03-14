@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace BackendAPI.Services
 {
-    public class ClassService(IRepository<Class> classRepository) : IClassService
+    public class ClassService(IClassRepository _classRepository) : IClassService
     {
         public async Task CreateAsync(ClassDTO request)
         {
@@ -19,28 +19,28 @@ namespace BackendAPI.Services
                 CoachId = request.CoachId
             };
 
-            await classRepository.CreateAsync(classEntity);
+            await _classRepository.CreateAsync(classEntity);
         }
 
         public async Task DeleteAsync(Guid id)
         {
-            await classRepository.DeleteAsync(id);
+            await _classRepository.DeleteAsync(id);
         }
 
         public async Task<List<Class>> GetAllAsync()
         {
-            return await classRepository.GetAllAsync();
+            return await _classRepository.GetAllAsync();
         }
 
         public async Task<Class?> GetByIdAsync(Guid id)
         {
-            return await classRepository.GetByIdAsync(id);
+            return await _classRepository.GetByIdAsync(id);
         }
         
         public async Task UpdateAsync(Guid id, [FromBody] JsonElement request)
         {
             var classNew = JsonSerializer.Deserialize<Class>(request.GetRawText());
-            var classEntity = await classRepository.GetByIdAsync(id);
+            var classEntity = await _classRepository.GetByIdAsync(id);
 
             if(classNew.Date != DateTime.MinValue)
             {
@@ -52,7 +52,12 @@ namespace BackendAPI.Services
                 classEntity.CoachId = classNew.CoachId;
             }
 
-            await classRepository.UpdateAsync(classEntity);
+            await _classRepository.UpdateAsync(classEntity);
+        }
+        public async Task<bool> JoinClass(EnrollmentDTO enrollment)
+        {
+            var result = await _classRepository.JoinClass(enrollment);
+            return result;
         }
     }
 }

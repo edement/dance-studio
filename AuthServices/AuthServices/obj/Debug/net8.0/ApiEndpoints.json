@@ -2,14 +2,14 @@
   {
     "ContainingType": "AuthServices.Controllers.AuthController",
     "Method": "Login",
-    "RelativePath": "login",
+    "RelativePath": "api/auth/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "AuthServices.DTOs.UserDto",
+        "Type": "AuthServices.Models.DTOs.AuthRequest",
         "IsRequired": true
       }
     ],
@@ -17,35 +17,15 @@
   },
   {
     "ContainingType": "AuthServices.Controllers.AuthController",
-    "Method": "Ping",
-    "RelativePath": "ping",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "AuthServices.Controllers.AuthController",
-    "Method": "GetUser",
-    "RelativePath": "user",
-    "HttpMethod": "GET",
+    "Method": "RefreshTokens",
+    "RelativePath": "api/auth/refresh",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "AuthServices.DTOs.UserDto",
+        "Name": "tokens",
+        "Type": "AuthServices.Models.DTOs.TokensPair",
         "IsRequired": true
       }
     ],
@@ -53,22 +33,18 @@
   },
   {
     "ContainingType": "AuthServices.Controllers.AuthController",
-    "Method": "Ping",
-    "RelativePath": "validate",
-    "HttpMethod": "GET",
+    "Method": "ValidateAccess",
+    "RelativePath": "api/auth/validate",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
+        "Name": "token",
         "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "IsRequired": true
       }
-    ]
+    ],
+    "ReturnTypes": []
   }
 ]

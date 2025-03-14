@@ -6,29 +6,29 @@ using Microsoft.AspNetCore.Mvc;
 namespace BackendAPI.Controllers
 {
     [ApiController]
-    public class UserController(IUserService userService) : ControllerBase
+    public class UserController(IUserService _userService) : ControllerBase
     {
         [HttpGet("users")]
         public async Task<List<User>> GetAllAsync()
         {
-            return await userService.GetAllAsync();
+            return await _userService.GetAllAsync();
         }
         [HttpGet("user/{login}")]
         public async Task<User?> GetByLoginAsync(string login)
         {
-            var user = await userService.GetByLoginAsync(login);
+            var user = await _userService.GetByLoginAsync(login);
             return user;
         }
         [HttpPost("register")]
         public async Task<IActionResult> CreateAsync(RegisterDTO request)
         {
-            await userService.CreateAsync(request);
+            await _userService.CreateAsync(request);
             return Created();
         }
         [HttpDelete("user/{id}")]
         public async Task<IActionResult> DeleteAsync(Guid id)
         {
-            await userService.DeleteAsync(id);
+            await _userService.DeleteAsync(id);
             return Ok("Deleted");
         }
     }
